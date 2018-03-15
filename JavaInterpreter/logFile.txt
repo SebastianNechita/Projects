@@ -1,0 +1,284 @@
+PRGSTATE ID:0
+ExeStack:
+v=2;
+w=5;
+Call sum[v*10, w];
+print(v);
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+v=2;
+w=5;
+Call sum[v*10, w];
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+v=2;
+w=5;
+Call sum[v*10, w]
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+v=2;
+w=5
+Call sum[v*10, w]
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+v=2
+w=5
+Call sum[v*10, w]
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+w=5
+Call sum[v*10, w]
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+v-->2
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+Call sum[v*10, w]
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+v-->2
+w-->5
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+v=a+b;
+print(v)
+Return
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+a-->20
+b-->5
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+v=a+b
+print(v)
+Return
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+a-->20
+b-->5
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+print(v)
+Return
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+a-->20
+b-->5
+v-->25
+Out:
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+Return
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+a-->20
+b-->5
+v-->25
+Out:
+25
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
+PRGSTATE ID:0
+ExeStack:
+print(v)
+Fork(
+Call product[v, w];
+Fork(
+Call sum[v, w]
+)
+)
+SymTable:
+v-->2
+w-->5
+Out:
+25
+FileTable:
+Heap:
+ProcTable:
+product-->ProcData{parameters=[a, b], body=v=a*b;
+print(v)}
+sum-->ProcData{parameters=[a, b], body=v=a+b;
+print(v)}
+
+
